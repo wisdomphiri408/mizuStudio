@@ -17,6 +17,9 @@
   --color-bg-button-hover:#2563EB;
   --color-text-button:#FFFFFF;
 
+  /*text  color*/
+  --color-emphasis:#3A86FF; /*color used to emphasis points(eg headings) */
+
   /* Headings-fluids */
   --text-h1: clamp(2rem, 1rem + 5vw, 3.5rem);
   --text-h2: clamp(1.5rem, 0.8rem + 3vw, 2.5rem);
@@ -102,4 +105,8 @@ body {
   button:hover {
     background-color: var(--color-bg-button-hover);
   }
+}
+
+.text-emphasis{
+  color: var(--color-emphasis);
 }
