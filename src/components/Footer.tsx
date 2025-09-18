@@ -5,11 +5,11 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 const Footer: NextPage = () => {
     return(
-        <div className="flex flex-col gap-8 px-4 mx-auto md:flex-row">
-            <section className="flex flex-col justify-between border-b gap-4">
+        <div className="flex flex-col gap-8 w-full max-w-[1400px] px-4 mx-auto  pt-8">
+            <section className="flex flex-col md:flex-row items-center justify-between border-b gap-4">
                 <div className="flex flex-col gap-4">
                     <h4 className="text-emphasis">Mizu Studio</h4>
-                    <p className="text-sm md:max-w-[300px]">
+                    <p className="text-sm md:max-w-[400px] ">
                         Professional photography and videography services in Blantyre, capturing your most precious moments with artistic excellence.
                     </p>
                 </div>
@@ -50,9 +50,9 @@ const Footer: NextPage = () => {
                     </div>
                 </div>
             </section>
-                <p>
-                    Made within 💙 Blantyre by Mizu Studio.
-                    © 2024 Mizu Studio. All rights reserved.
+                <p className="text-sm text-center">
+                    Made within 💙 Blantyre by Mizu Studio.<br/>
+                    <span className="text-gray-400">© 2024 Mizu Studio. All rights reserved.</span>
                 </p>
             <section>
 
