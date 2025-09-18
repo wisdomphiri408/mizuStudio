@@ -11,7 +11,7 @@ const NotFound: NextPage = () => {
             <h1>404</h1>
             <h3>Page Not Found</h3>
             <p className='text-center'>
-            Oops! The page you are looking for doesn't exist or has been moved.
+            Oops! The page you are looking for doesn&apos;t exist or has been moved.
             </p>
             <div className="flex gap-2">
                 <Link href ='/'>
