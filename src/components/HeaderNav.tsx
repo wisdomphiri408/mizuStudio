@@ -28,7 +28,7 @@ const HeaderNav: NextPage = () => {
 
     return(
         <div ref={dropdownRef}>
-            <div className={`flex justify-between items-center`}>
+            <div className={`flex justify-between items-center max-w-[1500px] mx-auto`}>
                 <Link href={'/'} className="text-white">
                     <h3>Mizu Studio</h3>
                 </Link>
