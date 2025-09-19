@@ -14,10 +14,10 @@ export default function Home() {
         <div className="flex flex-col gap-6 lg:gap-4 mx-auto  max-w-[900px]">
           <h2>About <span className="text-emphasis">Mizu Studio</span></h2>
           <p className="text-lg leading-relaxed">
-            Based in the vibrant city of Blantyre, Mizu Studio is your premier destination for professional photography and videography services. We are passionate about capturing life's most precious moments with artistic vision and technical excellence.
+            Based in the vibrant city of Blantyre, Mizu Studio is your premier destination for professional photography and videography services. We are passionate about capturing life&apos;s most precious moments with artistic vision and technical excellence.
           </p>
           <p className="text-lg leading-relaxed">
-            Our team of experienced photographers and videographers specializes in weddings, corporate events, birthday celebrations, and creative portraits. We believe that every moment tells a story, and we're here to help you preserve those stories for generations to come.
+            Our team of experienced photographers and videographers specializes in weddings, corporate events, birthday celebrations, and creative portraits. We believe that every moment tells a story, and we&apos;re here to help you preserve those stories for generations to come.
           </p>
           <p className="text-lg leading-relaxed">
             With years of experience and a commitment to quality, we combine traditional photography techniques with modern creativity to deliver stunning results that exceed expectations.
