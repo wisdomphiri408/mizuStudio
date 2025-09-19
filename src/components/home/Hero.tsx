@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero: NextPage = () => {
     return (
-        <div className="relative w-screen h-screen pt-0">
+        <div className="relative w-full h-[50vh] md:h-[85vh] lg:h-screen">
             <Image 
             src={'/heroImage.jpg'}
             alt="heroImage"
@@ -20,7 +20,7 @@ const Hero: NextPage = () => {
                 {/* Text Content */}
                 <div className="absolute text-center flex flex-col gap-4 inset-0 justify-center">
                     <h1>Welcome to <span className="text-emphasis">Mizu Studio</span></h1>
-                    <p className="max-w-md mx-auto">
+                    <p className="max-w-md mx-auto text-base md:text-lg">
                         Capturing your special moments with timeless photography and videography.
                     </p>
                     <Link href={'/services'}>
