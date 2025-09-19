@@ -11,7 +11,7 @@ export default function Home() {
 
       {/*About section */}
       <div className="grid lg:grid-cols-2 gap-6 items-center mt-8 max-w-[1500px] mx-auto sm:p-8">
-        <div className="flex flex-col gap-6 lg:gap-4 mx-auto  max-w-[900px]  p-2">
+        <div className="flex flex-col gap-4 lg:gap-4 mx-auto  max-w-[900px]  px-4">
           <h2>About <span className="text-emphasis">Mizu Studio</span></h2>
           <p className="md:text-lg leading-relaxed">
             Based in the vibrant city of Blantyre, Mizu Studio is your premier destination
