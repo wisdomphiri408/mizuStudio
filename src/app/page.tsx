@@ -10,35 +10,34 @@ export default function Home() {
       <Hero />
 
       {/*About section */}
-      <div className="grid lg:grid-cols-2 gap-12 items-center mt-8 max-w-[1500px] mx-auto p-4 sm:p-8">
-        <div className="flex flex-col gap-6 lg:gap-4 mx-auto  max-w-[900px]">
+      <div className="grid lg:grid-cols-2 gap-6 items-center mt-8 max-w-[1500px] mx-auto sm:p-8">
+        <div className="flex flex-col gap-6 lg:gap-4 mx-auto  max-w-[900px]  p-2">
           <h2>About <span className="text-emphasis">Mizu Studio</span></h2>
-          <p className="text-lg leading-relaxed">
-            Based in the vibrant city of Blantyre, Mizu Studio is your premier destination for professional photography and videography services. We are passionate about capturing life&apos;s most precious moments with artistic vision and technical excellence.
+          <p className="md:text-lg leading-relaxed">
+            Based in the vibrant city of Blantyre, Mizu Studio is your premier destination
+            for professional photography and videography. We capture life’s most precious
+            moments with artistic vision and technical excellence — from weddings and
+            corporate events to birthdays and creative portraits.
           </p>
-          <p className="text-lg leading-relaxed">
-            Our team of experienced photographers and videographers specializes in weddings, corporate events, birthday celebrations, and creative portraits. We believe that every moment tells a story, and we&apos;re here to help you preserve those stories for generations to come.
-          </p>
-          <p className="text-lg leading-relaxed">
-            With years of experience and a commitment to quality, we combine traditional photography techniques with modern creativity to deliver stunning results that exceed expectations.
-          </p>
+
         </div>
 
     
-          <div className="relative w-full max-w-[850px] mx-auto h-96 lg:h-[500px] p-4">
-            <Image
-              src="/photographer.jpg"
-              alt="photographer"
-              fill
-              className="object-cover object-[50%_30%] rounded-xl shadow-lg"
-              priority
-            />
-        </div>
+      <div className="relative w-full lg:max-w-[600px] mx-auto h-96 sm:h-80 lg:h-96">
+        <Image
+          src="/photographer.jpg"
+          alt="photographer"
+          fill
+          className="object-cover object-[50%_20%] lg:object-[50%_30%] sm:rounded-xl shadow-lg"
+          priority
+        />
+      </div>
+
 
       </div>
 
       {/*Services Setion */}
-      <div className="text-center px-4 sm:px-8 mt-28">
+      <div className="text-center px-4 sm:px-8 mt-10">
         <h2>
           Our <span className="text-emphasis">Services</span>
         </h2>
