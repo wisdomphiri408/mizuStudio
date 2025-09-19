@@ -2,23 +2,26 @@ import { NextPage } from "next";
 import { ReactElement } from "react";
 
 interface Props {
-    icon:ReactElement;
-    title:string;
-    description:string;
+  icon: ReactElement;
+  title: string;
+  description: string;
 }
 
-const ServicesCard: NextPage <Props>= ({
-    icon = '',
-    title = '',
-    description =''
-}) => {
-    return(
-        <div className=" flex flex-col gap-4 items-center md:max-w-[300px] border p-4 shadow-lg rounded-xl hover:shadow-xl hover:border-2 transition-shadow cursor-pointer">
-            <div className="border p-2 rounded-full text-[#3A86FF] bg-[#3A86FF33]">{icon}</div>
-            <h4>{title}</h4>
-            <p className="text-sm">{description}</p>
-        </div>
-    )
-}
+const ServicesCard: NextPage<Props> = ({ icon, title, description }) => {
+  return (
+    <div className="flex flex-col items-center text-center gap-4 border p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+      {/* Icon */}
+      <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[#3A86FF33] text-[#3A86FF] text-3xl">
+        {icon}
+      </div>
+
+      {/* Title */}
+      <h4 className="text-lg font-semibold">{title}</h4>
+
+      {/* Description */}
+      <p className="text-sm leading-relaxed">{description}</p>
+    </div>
+  );
+};
 
 export default ServicesCard;
