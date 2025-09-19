@@ -1,10 +1,15 @@
 import Hero from "@/components/home/Hero";
+import ServicesCard from "@/components/home/ServicesCard";
 import Image from "next/image";
+import { Heart, Camera, VideoIcon, Edit } from "lucide-react";
 
 export default function Home() {
   return (
     <div>
+      {/* Hero section*/}
       <Hero />
+
+      {/*About section */}
       <div className="flex flex-col md:flex-row mt-8">
         <div className="flex flex-col gap-4 mx-auto px-4 md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px]">
           <h2>About <span className="text-emphasis">Mizu Studio</span></h2>
@@ -31,6 +36,38 @@ export default function Home() {
           </div>
         </div>
 
+      </div>
+
+      {/*Services Setion */}
+      <div className="text-center px-4 mt-28">
+        <h2>
+          Our <span className="text-emphasis">Services</span>
+        </h2>
+        <p className="max-w-[750px] mx-auto">
+          We offer comprehensive photography and videography services designed to capture your most important moments with professional excellence and creative vision.
+        </p>
+
+        <div className="grid gap-4 sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))] mx-auto max-w-[1400px] mt-15">
+          <ServicesCard 
+          icon={<Heart />}
+          title="Wedding Photography"
+          description="Capture your special day with elegant, timeless photography that tells your unique love story." />
+
+          <ServicesCard 
+          icon={<Camera />}
+          title="Birthday Celebrations"
+          description="Preserve joyful birthday moments with vibrant, candid photography that captures pure happiness." />
+
+          <ServicesCard 
+          icon={<VideoIcon />}
+          title="Event Videography"
+          description="Professional video production for corporate events, celebrations, and special occasions." />
+
+          <ServicesCard 
+          icon={<Edit />}
+          title="Photo Editing"
+          description="Expert post-processing and retouching to enhance your photos with professional polish." />
+        </div>
       </div>
     </div>
   );
