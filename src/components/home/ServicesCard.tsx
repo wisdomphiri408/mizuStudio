@@ -1,13 +1,17 @@
 import { NextPage } from "next";
 import { ReactElement } from "react";
+import Link from "next/link";
 
 interface Props {
   icon: ReactElement;
   title: string;
   description: string;
+  buttonOne?:ReactElement;
+  buttonTwo?: ReactElement;
+  hrefLink?:string;
 }
 
-const ServicesCard: NextPage<Props> = ({ icon, title, description }) => {
+const ServicesCard: NextPage<Props> = ({ icon, title, description, buttonOne, buttonTwo, hrefLink }) => {
   return (
     <div className="flex flex-col items-center text-center gap-4 border p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
       {/* Icon */}
@@ -20,6 +24,18 @@ const ServicesCard: NextPage<Props> = ({ icon, title, description }) => {
 
       {/* Description */}
       <p className="text-sm leading-relaxed">{description}</p>
+
+      {/* Optional Buttons */}
+      <div className="flex flex-col gap-4">
+        {buttonOne && buttonOne}
+        <div>
+          <a href={hrefLink}
+          target="_blank"
+          rel='noopener noreferrer'>
+            {buttonTwo && buttonTwo}
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

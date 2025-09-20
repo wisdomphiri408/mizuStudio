@@ -30,7 +30,7 @@ const HeaderNav: NextPage = () => {
         <div ref={dropdownRef}>
             <div className={`flex justify-between items-center max-w-[1500px] mx-auto`}>
                 <Link href={'/'} className="text-white">
-                    <h3>Mizu Studio</h3>
+                    <h3>MizuStudios</h3>
                 </Link>
 
                 <div className="hidden md:block">
