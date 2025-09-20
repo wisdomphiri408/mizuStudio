@@ -8,7 +8,7 @@ const Footer: NextPage = () => {
         <div className="flex flex-col gap-8 w-full max-w-[1400px] px-4 mx-auto  pt-8">
             <section className="flex flex-col md:flex-row items-center justify-between border-b gap-4">
                 <div className="flex flex-col gap-4">
-                    <h4 className="text-emphasis">Mizu Studio</h4>
+                    <h4 className="text-emphasis">MizuStudios</h4>
                     <p className="text-sm md:max-w-[400px] ">
                         Professional photography and videography services in Blantyre, capturing your most precious moments with artistic excellence.
                     </p>
@@ -73,8 +73,8 @@ const Footer: NextPage = () => {
                 </div>
             </section>
                 <p className="text-sm text-center">
-                    Made within 💙 Blantyre by Mizu Studio.<br/>
-                    <span className="text-gray-400">© 2024 Mizu Studio. All rights reserved.</span>
+                    Made within 💙 Blantyre by MizuStudios.<br/>
+                    <span className="text-gray-400">© 2025 Mizu Studio. All rights reserved.</span>
                 </p>
             <section>
 

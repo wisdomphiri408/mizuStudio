@@ -19,7 +19,7 @@ const Hero: NextPage = () => {
 
                 {/* Text Content */}
                 <div className="absolute text-center flex flex-col gap-4 inset-0 justify-center">
-                    <h1>Welcome to <span className="text-emphasis">Mizu Studio</span></h1>
+                    <h1>Welcome to <span className="text-emphasis">MizuStudios</span></h1>
                     <p className="max-w-md mx-auto text-base md:text-lg">
                         Capturing your special moments with timeless photography and videography.
                     </p>
