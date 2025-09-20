@@ -27,26 +27,48 @@ const Footer: NextPage = () => {
                 <div className="flex flex-col gap-2 items-center mb-6">
                     <h5>Follow Us</h5>
                     <div className="flex gap-2 items-center">
-                        <Button className="rounded-full">
-                          <Instagram className="w-4 h-4"/>
-                        </Button>
-                        <Button className="rounded-full">
-                          <Facebook className="w-4 h-4"/>
-                        </Button>
+                        <a 
+                        href={'https://www.instagram.com/mizustudios_mw?utm_source=qr&igsh=anFoeDQ0ZWNrbGhh'} 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            <Button className="rounded-full w-9 h-9">
+                            <Instagram className="w-4 h-4"/>
+                            </Button>
+                        </a>
 
-                        <Button className="rounded-full">
-                            <Image 
-                            src={'/tiktok.svg'}
-                            alt="tiktok"
-                            width={16}
-                            height={16}
-                            className="w-4 h-4 invert"
-                            />
-                        </Button>
+                        <a 
+                        href={'https://www.facebook.com/profile.php?id=61552408960480'} 
+                        target="_brank"
+                        rel='noopener noreferrer'>
+                            <Button className="rounded-full w-9 h-9">
+                            <Facebook className="w-4 h-4"/>
+                            </Button>
+                        </a>
 
-                        <Button className="rounded-full">
+                        <a 
+                        href={'https://www.tiktok.com/@mizu.raph7?_t=ZM-8zqsqAEwUup&_r=1'} 
+                        target="_blank"
+                        rel='noopener noreferrer'>
+                            <Button className="rounded-full">
+                                <Image 
+                                src={'/tiktok.svg'}
+                                alt="tiktok"
+                                width={8}
+                                height={8}
+                                className="w-4 h-4 invert"
+                                />
+                            </Button>
+                        </a>
+
+                        <a 
+                        href={'https://www.linkedin.com/in/mizu-studios-b9b97a335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'} 
+                        target="blank
+                        rel='noopener noreferrer">
+                             <Button className="rounded-full w-9 h-9">
                             <Linkedin className="w-4 h-4 "/>
                         </Button>
+                        </a>
+
                     </div>
                 </div>
             </section>
