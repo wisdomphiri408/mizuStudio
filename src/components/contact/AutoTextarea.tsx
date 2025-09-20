@@ -1,10 +1,11 @@
-'use client'
-import { useRef, useEffect } from "react";
+'use client';
+import { useRef, useEffect } from 'react';
 
-
-interface AutoTextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
-
-const AutoTextarea = ({ value, onChange, ...props }: AutoTextareaProps) => {
+const AutoTextarea = ({
+  value,
+  onChange,
+  ...props
+}: React.TextareaHTMLAttributes<HTMLTextAreaElement>) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ const AutoTextarea = ({ value, onChange, ...props }: AutoTextareaProps) => {
       value={value}
       onChange={onChange}
       {...props}
-      className={`resize-none p-4 rounded-md border  focus:outline-none focus:ring-2 focus:ring-blue-500 ${props.className}`}
+      className={`resize-none p-4 rounded-md border focus:outline-none focus:ring-2 focus:ring-blue-500 ${props.className}`}
     />
   );
 };
