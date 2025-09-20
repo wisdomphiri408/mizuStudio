@@ -20,7 +20,7 @@ const InputField: NextPage<InputProps> = ({
     return(
     <input 
     type={type}
-    className={`border outline-none rounded-2xl px-2 lg:text-lg ${className}`}
+    className={`border outline-none focus:ring-blue-500 focus:ring-2 rounded-2xl px-2 lg:text-lg ${className}`}
     value={value}
     onChange={onChange}
     placeholder={placeholder}
