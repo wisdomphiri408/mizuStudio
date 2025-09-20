@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { ReactElement } from "react";
-import Link from "next/link";
+
 
 interface Props {
   icon: ReactElement;
