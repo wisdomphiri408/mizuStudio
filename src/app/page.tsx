@@ -2,6 +2,7 @@ import Hero from "@/components/home/Hero";
 import ServicesCard from "@/components/home/ServicesCard";
 import Image from "next/image";
 import { Heart, Camera, VideoIcon, Edit } from "lucide-react";
+import ServiceImageCard from "@/components/home/ServiceImageCard";
 
 export default function Home() {
   return (
@@ -37,34 +38,16 @@ export default function Home() {
       </div>
 
       {/*Services Setion */}
-      <div className="text-center px-4 sm:px-8 mt-10">
-        <h2>
+      <div className="text-center sm:px-8 mt-10">
+        <h2 className="px-4">
           Our <span className="text-emphasis">Services</span>
         </h2>
-        <p className="max-w-[750px] mx-auto text-lg leading-relaxed">
+        <p className="max-w-[750px] mx-auto md:text-lg leading-relaxed px-4">
           We offer comprehensive photography and videography services designed to capture your most important moments with professional excellence and creative vision.
         </p>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4  mx-auto max-w-[1400px] mt-15">
-          <ServicesCard 
-          icon={<Heart />}
-          title="Wedding Photography"
-          description="Capture your special day with elegant, timeless photography that tells your unique love story." />
-
-          <ServicesCard 
-          icon={<Camera />}
-          title="Birthday Celebrations"
-          description="Preserve joyful birthday moments with vibrant, candid photography that captures pure happiness." />
-
-          <ServicesCard 
-          icon={<VideoIcon />}
-          title="Event Videography"
-          description="Professional video production for corporate events, celebrations, and special occasions." />
-
-          <ServicesCard 
-          icon={<Edit />}
-          title="Photo Editing"
-          description="Expert post-processing and retouching to enhance your photos with professional polish." />
+        <div className="mt-15">
+          <ServiceImageCard />
         </div>
       </div>
     </div>
