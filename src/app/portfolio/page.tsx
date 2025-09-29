@@ -1,6 +1,8 @@
 import {NextPage} from 'next';
 import PortfolioTabs from "@/components/portfolio/PortfolioTabs";
 import PortfolioHero from "@/components/portfolio/PortfolioHero";
+import PortfolioGallery from "@/components/portfolio/PortfolioGallery";
+import {GalleryProvider} from "@/context/GalleryProvider";
 
 const PortfolioPage: NextPage = () => {
     const portfolio = [
@@ -67,11 +69,14 @@ const PortfolioPage: NextPage = () => {
     ];
 
     return (
+        <GalleryProvider portfolio={portfolio}>
         <div className={'p-4 flex flex-col gap-16'}>
-            <PortfolioHero />
-            <PortfolioTabs portfolio={portfolio} />
-        </div>
+                <PortfolioHero />
+                <PortfolioTabs portfolio={portfolio} />
+                <PortfolioGallery />
 
+        </div>
+        </GalleryProvider>
     )
 }
 
