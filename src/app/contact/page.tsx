@@ -4,6 +4,7 @@ import { NextPage } from "next";
 import { MessageCircle, PhoneCall, Mail, MapPin } from "lucide-react";
 import MapEmbed from "@/components/contact/MapEmbed";
 import EmailForm from "@/components/contact/EmailForm";
+import WhatsAppBooking from "@/components/contact/WhatsAppBooking";
 
 const Contact: NextPage = () => {
     return(
@@ -88,16 +89,7 @@ const Contact: NextPage = () => {
                 <p className="text-lg max-w-[600px] mx-auto">
                     Don&apos;t wait to capture those special moments. Get in touch with us today and let&apos;s create something beautiful together.
                 </p>
-                <div>
-                    <a href="https://whatsapp.com/dl/"
-                    target="_blank"
-                    rel = 'noopener noreferrer'>
-                        <Button>
-                            <MessageCircle className="w-4 h-4"/>
-                            Book Now on WhatsApp
-                        </Button>
-                    </a>
-                </div>
+                <WhatsAppBooking />
                 <p className="text-sm">
                     Or call us directly at <span className="text-emphasis">+265 123 456 789</span>
                 </p>
