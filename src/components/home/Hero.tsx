@@ -23,7 +23,7 @@ const Hero: NextPage = () => {
                     <p className="max-w-md mx-auto text-base md:text-lg">
                         Capturing your special moments with timeless photography and videography.
                     </p>
-                    <Link href={'/services'}>
+                    <Link href={'/portfolio'}>
                         <Button>Get Started</Button>
                     </Link>
                 </div>
