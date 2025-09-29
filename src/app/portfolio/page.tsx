@@ -3,6 +3,7 @@ import PortfolioTabs from "@/components/portfolio/PortfolioTabs";
 import PortfolioHero from "@/components/portfolio/PortfolioHero";
 import PortfolioGallery from "@/components/portfolio/PortfolioGallery";
 import {GalleryProvider} from "@/context/GalleryProvider";
+import PortfolioBooking from "@/components/portfolio/PortfolioBooking";
 
 const PortfolioPage: NextPage = () => {
     const portfolio = [
@@ -74,7 +75,7 @@ const PortfolioPage: NextPage = () => {
                 <PortfolioHero />
                 <PortfolioTabs portfolio={portfolio} />
                 <PortfolioGallery />
-
+                <PortfolioBooking />
         </div>
         </GalleryProvider>
     )
